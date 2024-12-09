@@ -22,10 +22,13 @@
     background-color: transparent; 
 }
 
+
+
+
 /* Hero/Home sekcija */
 .hero-section {
     background-color: black;
-    background-image: url('https://via.placeholder.com/1500x800'); /* Treba da stavim neku sliku */
+    background-image: url('img/Main_Bg.jpg');    /* Treba da stavim neku sliku */
     background-size: cover;
     background-position: center;
     color: rgb(255, 255, 255);
@@ -59,10 +62,36 @@
     background-color: #c13e1b;
 }
 
+
+
+
 /* About Us sekcija */
+
+.learn-section-wrapper {
+    background-image: url('img/White_Bg.jpg'); /* Putanja do slike */
+    background-size: cover; /* Pokriva celu širinu */
+    background-repeat: no-repeat; /* Sprečava ponavljanje slike */
+    background-position: center; /* Centrira sliku */
+    width: 100%; /* Omogućava da sekcija zauzme celu širinu stranice */
+    padding: 50px 0;
+}
+
+.learn-section-wrapper .container {
+    padding: 20px; /* Održava razmak između sadržaja i ivica */
+}
+
+.learn-section-wrapper h2 {
+    color: #ffffff; /* Boja teksta u naslovu */
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Efekat senke */
+}
+
+
 .about-us-section {
     padding: 50px 0;
-    background-color: #000000;
+    background-image: url('img/Main_Bg.jpg');
 }
 
 .about-text {
@@ -70,8 +99,9 @@
     background-color: #dbdada;
     padding: 20px;
     border-radius: 8px;
-    border: 5px solid #c13e1b;
+    border: 3px solid #c13e1b;
 }
+
 
 .about-text h1 {
     font-size: 36px;
@@ -95,11 +125,24 @@
     }
 }
 
+.about-icon {
+    display: block;
+    margin: 10px auto 0; /* Centriramo ikonicu i dodajemo razmak od teksta */
+    width: 80px; /* Prilagođena veličina slike */
+    height: 80px; /* Prilagođena visina slike */
+    transition: transform 0.3s ease; /* Efekat pri hoveru */
+}
+
+.about-icon:hover {
+    transform: scale(1.1); /* Povećava ikonicu pri hoveru */
+    cursor: pointer; /* Pokazuje da je element klikabilan */
+}
+
 
 /*  3 box layout */
 .about-item {
     text-align: center;
-    border: 3px solid #ff4800;
+    border: 2px solid #ff4800;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -120,14 +163,16 @@
     }
 }
 
+
+
 /* Why Use This Site sekcija */
 .why-use-section {
-    background-color: #000000;
+    background-image: url('img/Main_Bg.jpg');
     padding: 50px 0;
 }
 
 .why-use-box {
-    background-color: #ffffff;
+    background-color: #dbdada;
     padding: 30px;
     border-radius: 8px;
     border: 3px solid #ff4800;
