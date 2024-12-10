@@ -68,7 +68,7 @@
 /* About Us sekcija */
 
 .learn-section-wrapper {
-    background-image: url('img/White_Bg.jpg'); /* Putanja do slike */
+  /*  background-image: url('img/White_Bg.jpg'); /* Putanja do slike */
     background-size: cover; /* Pokriva celu širinu */
     background-repeat: no-repeat; /* Sprečava ponavljanje slike */
     background-position: center; /* Centrira sliku */
@@ -81,7 +81,7 @@
 }
 
 .learn-section-wrapper h2 {
-    color: #ffffff; /* Boja teksta u naslovu */
+    color: #030303; /* Boja teksta u naslovu */
     margin-bottom: 30px;
     font-size: 36px;
     text-transform: uppercase;
@@ -243,4 +243,61 @@
     background-color: #333333; 
 }
 
+  
+
+
+/* Stil za .container koji koristi flexbox */
+.animation-page-container {
+    display: flex;               /* Aktivira flexbox model */
+    justify-content: space-between; /* Razmak između elemenata */
+    gap: 20px;                   /* Razmak između divova */
+    margin-top: 10%;              /* Vertikalno poravnanje elemenata sa vrhom stranice */
+    margin-bottom: 5%;
+}
+
+/* Stilovi za box-ove unutar .animation-page-container */
+.animation-page-container .box {
+    width: 45%;                   /* Postavljamo širinu box-ova */
+    padding: 40px;
+    border: 1px solid #ff4800;    /* Boja granice */
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stil za krug u box-u */
+.animation-page-container .circle {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;     /* Početna boja kruga */
+    border-radius: 50%;            /* Pravljenje oblika kruga */
+    cursor: pointer;              /* Pokazivač kursora pri hover-u */
+    transition: background-color 0.3s; /* Glatka promena boje */
+    margin-top: 20px;              /* Razmak između box sadržaja i kruga */
+}
+
+/* Stil za kocku koja postaje krug */
+#shapeBox {
+    width: 100px;
+    height: 100px;
+    background-color: #ff5733; /* Početna boja kocke */
+    transition: transform 0.5s ease, background-color 0.5s ease; /* Glatka animacija */
+    cursor: pointer; /* Pokazivač kursora pri hoveru */
+}
+
+/* Stil za hover efekat kocke */
+#shapeBox:hover {
+    transform: border-radius 50%; /* Kocka postaje krug */
+    background-color: #ff7f32; /* Promena boje pri hover-u */
+}
+
+
+
+
+
+
+  
   
