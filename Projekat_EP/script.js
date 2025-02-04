@@ -1,6 +1,6 @@
 
 
-// 1. Funkcija Animacija
+// 1. Funkcija promena boje
 
 document.getElementById("colorCircle").addEventListener("click", function() {             //Pravimo niz boja u hex formatu
     const colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"];
@@ -34,26 +34,27 @@ function rgbToHex(rgb) {
 }
 
 
-
-
-
-
 // 2. Funkcija Animacija
 
+// Pronađi element sa ID-jem "shapeBox"
+const shapeBox = document.getElementById('shapeBox');
 
-    // Pronaći element sa id "shapeBox"
-    const shapeBox = document.getElementById('shapeBox');
+// Dodaj event listener za klik
+shapeBox.addEventListener('click', () => {
+    // Menja klasu u 'triangle' ili je uklanja
+    shapeBox.classList.toggle('triangle');  
+});
 
-    // Dodati event listener za hover (mouse enter i mouse leave)
-    shapeBox.addEventListener('mouseenter', () => {
-        shapeBox.style.transform = 'border-radius: 50%'; // Postepeno menja u krug
-        shapeBox.style.backgroundColor = '#ff7f32'; // Menja boju na hover
-    });
 
-    shapeBox.addEventListener('mouseleave', () => {
-        shapeBox.style.transform = 'border-radius: 0%'; // Vraća u kocku
-        shapeBox.style.backgroundColor = '#ff5733'; // Vraća početnu boju
-    });
+// 2. Funkcija Scale
+
+// Pronađi element
+const scalableBox = document.getElementById('scalableBox');
+
+// Dodaj događaj za klik
+scalableBox.addEventListener('click', () => {
+    scalableBox.classList.toggle('scaled'); // Dodaje ili uklanja klasu 'scaled'
+});
 
 
 

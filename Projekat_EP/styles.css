@@ -1,3 +1,13 @@
+body {
+    background-color: #fff9e6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
 /* Navbar Styling */
 .navbar-inverse {
     background-color: #000000; 
@@ -74,6 +84,7 @@
     background-position: center; /* Centrira sliku */
     width: 100%; /* Omogućava da sekcija zauzme celu širinu stranice */
     padding: 50px 0;
+
 }
 
 .learn-section-wrapper .container {
@@ -253,6 +264,7 @@
     gap: 20px;                   /* Razmak između divova */
     margin-top: 10%;              /* Vertikalno poravnanje elemenata sa vrhom stranice */
     margin-bottom: 5%;
+    
 }
 
 /* Stilovi za box-ove unutar .animation-page-container */
@@ -260,13 +272,15 @@
     width: 45%;                   /* Postavljamo širinu box-ova */
     padding: 40px;
     border: 1px solid #ff4800;    /* Boja granice */
+    border-radius: 15px;          /* Zaokruživanje granica */
     box-sizing: border-box;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #dbdada;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 /* Stil za krug u box-u */
 .animation-page-container .circle {
@@ -293,6 +307,39 @@
     transform: border-radius 50%; /* Kocka postaje krug */
     background-color: #ff7f32; /* Promena boje pri hover-u */
 }
+
+/* Stil za kocku */
+#shapeBox {
+    width: 100px;
+    height: 100px;
+    background-color: #ff5733; /* Početna boja kvadrata */
+    transition: all 0.5s ease; /* Glatka animacija za promene */
+    cursor: pointer; /* Pokazivač kursora pri hoveru */
+}
+
+/* Transformacija u trougao */
+#shapeBox.triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Oblik trougla */
+    background-color: #32ff7f; /* Boja trougla */
+}
+
+
+/* Stil za skalirajući kvadrat */
+.scalable {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff; /* Plava boja */
+    transition: transform 0.3s ease; /* Glatka promena veličine */
+    cursor: pointer;
+    margin-top: 20px; /* Razmak od gornjeg sadržaja */
+}
+
+/* Efekat skaliranja na klik */
+.scalable.scaled {
+    transform: scale(1.5); /* Povećava dimenzije za 1.5x */
+}
+
+
 
 
 
